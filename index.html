@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil — Haidarah Nazreen Hakim</title>
+  <meta name="description" content="Halaman profil Haidarah Nazreen Hakim, SMKN 2 Purwakarta — jurusan PPLG." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <main class="container">
+    <aside class="card">
+      <div class="profile-header">
+        <div class="avatar" aria-hidden="true">
+          <img src="Nazreen1.jpg" alt="Foto Profil">
+        </div>
+        <h1 id="name">Haidarah Nazreen Hakim</h1>
+        <p class="role" id="title">Barista & Web Development</p>
+        <p class="bio">
+          Halo, saya Haidarah Nazreen Hakim dari SMKN 2 Purwakarta, jurusan PPLG.
+          Saat ini saya sedang belajar dan mengembangkan kemampuan di bidang pemrograman dan web development.
+        </p>
+
+        <div class="badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Meracik Kopi</span>
+        </div>
+
+        <div class="contact-actions">
+          <button class="btn small" id="copyEmail">Salin Email</button>
+          <button class="btn small" id="downloadCv">Unduh CV</button>
+          <button class="btn small theme-toggle" id="toggleTheme">Mode</button>
+        </div>
+      </div>
+
+      <div class="info">
+        <div>
+          <div class="label">Lokasi</div>
+          <div>Purwakarta, Indonesia</div>
+        </div>
+        <div>
+          <div class="label">Kelas</div>
+          <div>X PPLG-2</div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="card">
+      <div class="section">
+        <h2>Ringkasan</h2>
+        <p class="bio">
+          Halo! Saya <strong id="displayName">Haidarah Nazreen Hakim</strong>, pengembang front-end dan barista yang menyukai hal sederhana tapi kuat.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="label"><span>HTML & CSS</span><span>75%</span></div>
+            <div class="progress"><i style="width:75%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="label"><span>JavaScript</span><span>75%</span></div>
+            <div class="progress"><i style="width:75%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="label"><span>Meracik Kopi</span><span>95%</span></div>
+            <div class="progress"><i style="width:95%"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Portofolio Singkat</h2>
+        <div class="grid-cards">
+          <div class="port-card">
+            <h3>Magang & Pengalaman Kerja</h3>
+            <p>Yello Coffee (2024) — Magang profesi, belajar meracik dan menyajikan kopi. 
+            Adakaos (2023) — Industri kreatif, membuat desain kaos dan konten promosi. 
+            Sate Maranggi SAMARINA (2023) — Pengalaman kuliner dan pelayanan pelanggan. 
+            Benih Bunbun (2022) — Agrifarm, membantu produksi dan pemasaran hasil tani.</p>
+          </div>
+          <div class="port-card">
+            <h3>Pendidikan</h3>
+            <p>SD Alam Purwakarta (2016–2022). 
+            SMP Alam Purwakarta (2022–2025). 
+            SMKN 2 Purwakarta (2025–sekarang) — Jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).</p>
+          </div>
+          <div class="port-card">
+            <h3>Ekspedisi & Pengalaman Lapangan</h3>
+            <p>Gunung Manglayang, Jatinangor (2022). 
+            Gunung Gede, Cianjur (2023). 
+            Karimun Jawa, Jepara (2024). 
+            Singapura & Malaysia (2025).</p>
+          </div>
+          <div class="port-card">
+            <h3>Minat & Organisasi</h3>
+            <p>Minat: Dunia IT, desain web, dan bisnis kopi. 
+            Organisasi: Ketua Sekbid Keilmuan & Kewirausahaan, anggota FOSTA (Forum OSIS Purwakarta).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Kontak</h2>
+        <form id="contactForm" onsubmit="return false;">
+          <div class="row">
+            <input id="inputName" placeholder="Nama" required />
+            <input id="inputEmail" placeholder="Email" required type="email" />
+          </div>
+          <textarea id="inputMessage" rows="4" placeholder="Tulis pesan..." required></textarea>
+          <button class="btn" id="sendBtn">Kirim Pesan</button>
+          <div id="formMsg" class="formMsg"></div>
+        </form>
+      </div>
+
+      <footer>
+        Dibuat dengan • <span id="copyrightYear"></span> • <span id="footerName">Haidarah Nazreen Hakim</span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- 💌 Script EmailJS harus di atas script.js -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Script utama kamu -->
+  <script src="script.js"></script>
+</body>
+</html>
+
